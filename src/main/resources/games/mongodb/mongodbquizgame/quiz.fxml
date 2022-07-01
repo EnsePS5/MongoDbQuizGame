@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="games.mongodb.mongodbquizgame.QuizController">
+   <children>
+      <Pane fx:id="titlePane" layoutX="3.0" layoutY="3.0" prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="playButton" layoutX="360.0" layoutY="400.0" mnemonicParsing="false" onAction="#Play" prefHeight="150.0" prefWidth="280.0" text="Play">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+            <Button fx:id="questionButton" alignment="CENTER" layoutX="14.0" layoutY="478.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="280.0" text="Questions" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="706.0" layoutY="475.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="280.0" text="Exit">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="146.0" text="QUIZ GAME!">
+               <font>
+                  <Font name="OCR A Extended" size="140.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="778.0" text="I was bored... but I had fun!" textFill="#e4e4e4" />
+            <Label layoutX="778.0" layoutY="778.0" text="Made in 2022/05 with MongoDB usage" />
+         </children>
+      </Pane>
+      <Pane fx:id="questionPane" disable="true" opacity="0.0" prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <ListView fx:id="questionListView" layoutX="14.0" layoutY="25.0" prefHeight="750.0" prefWidth="400.0" />
+            <Button fx:id="addQuestionButton" alignment="CENTER" layoutX="426.0" layoutY="325.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="560.0" text="Add question" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeSelectedButton" alignment="CENTER" layoutX="426.0" layoutY="475.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="560.0" text="Remove selected" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+            <Button fx:id="backToMenuButton" alignment="CENTER" layoutX="426.0" layoutY="625.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="150.0" prefWidth="560.0" text="Back to menu" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="OCR A Extended" size="41.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
